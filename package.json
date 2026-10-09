@@ -1,0 +1,38 @@
+{
+  "name": "goatfarm-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Goat Farm Management System with React frontend and Node/Express backend connected to MySQL.",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lucide-react": "^1.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.12.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
